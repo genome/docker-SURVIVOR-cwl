@@ -8,6 +8,7 @@ LABEL \
 RUN apt-get update && apt-get install -y \
   g++ \
   make \
+  gzip \
   wget
 
 ENV SURVIVOR_INSTALL_DIR=/opt/SURVIVOR
@@ -26,3 +27,4 @@ WORKDIR /
 RUN ln -s $SURVIVOR_INSTALL_DIR/SURVIVOR /usr/bin/SURVIVOR && \
   rm -rf /tmp/SURVIVOR-$SURVIVOR_VERSION/
 
+COPY survivor_merge_helper.sh /usr/bin/survivor_merge_helper.sh
