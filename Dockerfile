@@ -2,7 +2,7 @@ FROM ubuntu:xenial
 MAINTAINER Alexander Paul <alex.paul@wustl.edu>
 
 LABEL \
-  version="1.0.5" \
+  version="1.0.6.1" \
   description="SURVIVOR image to be used in cwl workflows"
 
 RUN apt-get update && apt-get install -y \
