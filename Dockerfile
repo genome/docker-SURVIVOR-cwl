@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
   g++ \
   make \
   gzip \
-  wget
+  wget \
+  zlib1g-dev
 
 ENV SURVIVOR_INSTALL_DIR=/opt/SURVIVOR
 ENV SURVIVOR_VERSION=1.0.6.2
